@@ -547,7 +547,7 @@ docker compose up -d
       <div class="grid security">
         <div class="card"><strong>只读 MCP</strong><p>不暴露任意 SQL，工号白名单在服务端校验，模型无法越权查询。</p></div>
         <div class="card"><strong>审计日志</strong><p>每次工具调用写入 logs/mcp_audit.jsonl，包含工号、参数和结果状态。</p></div>
-        <div class="card"><strong>密码哈希</strong><p>users 表保存 PBKDF2-SHA256 哈希，60 万次迭代，每个账号独立盐。</p></div>
+        <div class="card"><strong>密码哈希</strong><p>users 表保存 PBKDF2-SHA256 哈希，60 万次迭代，每个账号独立。</p></div>
         <div class="card"><strong>不编造答案</strong><p>资料不足时明确说无法确认，并建议联系 HR，而不是猜测。</p></div>
       </div>
     </div>
