@@ -9,3 +9,6 @@ data/docs/private/
 logs/
 *.log
 .DS_Store
+
+# 本地环境说明（不提交）
+README.local.md
