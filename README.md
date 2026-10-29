@@ -2,6 +2,10 @@
 
 一个可落地的 HR Agent 示例：**RAG 知识库 + MCP 数据工具 + LangGraph 状态机 + FastAPI SSE 流式输出**。
 
+[![HR 助手界面](docs/assets/chat-answer.png)](https://ting54zhen.github.io/hr-agent/)
+
+> 演示主页：<https://ting54zhen.github.io/hr-agent/>
+
 - 制度类问题：从 HR 文档中混合检索（BM25 + BGE-M3 向量），再经 BGE reranker 重排。
 - 个人数据问题：通过 MCP Server 查询 MySQL 中的假期余额、考勤、组织信息。
 - 混合问题：同时走 RAG 和 MCP，再统一生成。
@@ -62,6 +66,8 @@ hr-agent/
 │  └─ search_cli.py           命令行测 /search
 ├─ web/
 │  └─ index.html              浏览器聊天页（/ui/ 或双击打开）
+├─ docs/
+│  └─ index.html              GitHub Pages 演示主页
 ├─ eval/                      检索评测集与脚本
 ├─ docker-compose.yml         MySQL 8.4 + Redis 8
 └─ .env.example
